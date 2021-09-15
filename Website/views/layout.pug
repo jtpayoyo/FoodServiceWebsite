@@ -1,0 +1,44 @@
+//- 
+	LAYOUT PUG PAGE
+	author: Jeanne Payoyo
+	date: June 10, 2021
+	course: CPRG 210 nodeJS
+	description: has a layout for the header and footer of the pug pages
+
+doctype html
+
+head
+	block title
+		title Example
+	block scripts
+		link(rel="icon" type="image/png" href="healthybird-logo-2.png")
+		link(rel="stylesheet" href="reset.css")
+		link(rel="stylesheet" href="styles.css")
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous")
+		script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous")
+		script(type="module" src="https://unpkg.com/ionicons@5.5.1/dist/ionicons/ionicons.esm.js")
+	
+body
+	block content
+		header
+			h1
+				a(href="homepage")
+					img(src="healthybird-logo-2.png" class="mylogo" alt="healthybird logo" title="healthybird logo" valign="middle")
+				| healthybird
+		nav
+			ul.main-nav
+				li
+					a(href="contact")
+						| Contact
+				li
+					a(href="about")
+						| About
+				li
+					a(href="homepage")
+						| Home
+		div(style="clear:both")
+	block foot
+		footer
+			| Copyright healthybird &copy;

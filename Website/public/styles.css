@@ -1,0 +1,213 @@
+/* Stylesheet for nodeJS Assignment webpages */
+/* author: Jeanne Payoyo */
+
+/* ------ GLOBAL ------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+/* General */
+:root {
+  --maincol: #0abde3;
+  --lighter: #48dbfb;
+  --white: #fff;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: --white;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+
+.mylogo {
+	border: 5px solid --white;
+	border-radius: 50%;
+	margin-right: 25px;
+	width: 100px;
+}
+
+header {
+	margin: 10px 0 30px 0;
+}
+
+header h1 { 
+	display: block;
+	padding-left: 25px;
+	float: left;
+	color: --white;
+}
+
+footer {
+	background-color: #a1eeff;
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+}
+
+.main-nav ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.main-nav li {
+	float: right;
+}
+
+.main-nav a {
+	display: block;
+	margin-right: 30px;
+	padding-top: 30px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+	font-weight: 600;
+	color: black;
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
+	transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+	border-bottom: 3px solid #0abde3;
+}
+
+.hp-intro {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 20%;
+	margin-right: 20%;
+	line-height: 1.6;
+}
+
+/* ------ HOMEPAGE SPECIFIC ------ */
+
+/* Modified the top-pic and top-text code from coder-coder.com */
+.top-pic {
+    position: relative; 
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	/* background-image: url("images/tg-1.jpg"); */
+	background-image: url(tg-1.jpg);
+	background-position: center;
+    background-size: cover;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.top-pic::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.top-text {
+	position: relative;
+	color: #ffffff;  
+	font-size: 3rem;
+	line-height: 0.9;
+	text-align: center;
+}
+
+.meal-day img {
+	padding-top:15px;
+	padding-bottom: 30px;
+	width: 65%;
+	border-radius: 50%;
+}
+
+.meal-day p {
+	line-height: 1.6;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.jp-social {
+	margin-left:10px;
+	margin-right:10px;
+}
+
+/* ------ CONTACT SPECIFIC ------ */
+
+.contact-intro {
+	clear: both;
+	text-align: center;
+	display: block;
+}
+
+.contact-pic{
+	/*background-image: url("images/pina.jpg");*/
+	background-image: url(pina.jpg);
+}
+
+.bio-contact img {
+	border-radius:50%;
+	padding: 0 25px;
+	margin-bottom: 10px;
+}
+
+.bio-contact p {
+	text-align: center;
+	width: 90%;
+}
+
+.div-form {
+	border-radius: 5px;
+	background-color: #a1eeff;
+	margin: 0px 30% 50px 30%;
+	padding: 20px;
+}
+
+/* ------ ABOUT SPECIFIC ------ */
+
+.about-intro {
+	clear: both;
+	text-align: center;
+	display: block;
+}
+
+.about-pic{
+	/*background-image: url("images/crab-stick-2.jpg");*/
+	background-image: url(crab-stick-2.jpg);
+}
+
+.jp-icon{
+	display:in-line;
+	font-size: 56px;
+	color: #0abde3;
+}
+
+/* ------ 404 SPECIFIC ------ */
+.pic404 {
+	/*background-image: url("images/cabbageham.jpg");*/
+	background-image: url(cabbageham.jpg);
+}
+
+/* ------ THANKYOU SPECIFIC ------ */
+.ty-pic {
+	/*background-image: url("images/whitefish-2.jpg");*/
+	background-image: url(whitefish-2.jpg);
+}
+
+/* ------ DATABASE SPECIFIC ------ */
+.my-tab {
+	margin: 0 20% 50px 20%;
+}

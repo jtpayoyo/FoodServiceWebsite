@@ -1,0 +1,156 @@
+/* Stylesheet for HTML CSS Javascript Assignment webpages */
+/* author: Jeanne Payoyo */
+
+/* ------ GLOBAL ------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+/* General */
+:root {
+  --maincol: #0abde3;
+  --lighter: #48dbfb;
+  --white: #fff;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: --white;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+
+.mylogo {
+	border: 5px solid --white;
+	border-radius: 50%;
+	margin-right: 25px;
+	width: 100px;
+}
+
+header {
+	margin: 10px 0 20px 25px;
+}
+
+header h1 { 
+	display: block;
+	float: left;
+	color: --white;
+}
+
+footer {
+	background-color: #a1eeff;
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+}
+
+.main-nav ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.main-nav li {
+	float: right;
+}
+
+.main-nav a {
+	display: block;
+	margin-right: 30px;
+	padding-top: 30px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+	font-weight: 600;
+	color: black;
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
+	transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+	border-bottom: 3px solid #0abde3;
+}
+
+/* ------ HOMEPAGE SPECIFIC ------ */
+
+/* Modified the top-pic and top-text code from coder-coder.com */
+.top-pic {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	background-image: url(tg-1.jpg);
+	background-position: center;
+    background-size: cover;
+}
+
+.top-pic::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.top-text {
+	position: relative;
+	color: #ffffff;  
+	font-size: 3rem;
+	line-height: 0.9;
+	text-align: center;
+}
+
+.hp-intro {
+	text-align: center;
+	margin-top: 15px;
+	margin-left: 20%;
+	margin-right: 20%;
+	line-height: 1.6;
+}
+
+.meal-day {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.meal-day img {
+	padding-top:15px;
+	padding-bottom: 10px;
+	width: 65%;
+	border-radius: 50%;
+}
+
+.meal-day p {
+	line-height: 1.6;
+	padding: 0 15px;
+}
+
+/* ------ CONTACT SPECIFIC ------ */
+
+.contact-intro {
+	clear: both;
+	text-align: center;
+	display: block;
+}
+
+/* ------ ABOUT SPECIFIC ------ */
+
+.about-intro {
+	clear: both;
+	text-align: center;
+	display: block;
+}

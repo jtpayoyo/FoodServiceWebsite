@@ -1,0 +1,40 @@
+//- 
+	404 PUG PAGE
+	author: Jeanne Payoyo
+	date: June 10, 2021
+	course: CPRG 210 nodeJS
+	description: homepage pug page converted from html
+extends layout.pug
+block title
+	title healthybird Home
+block append content
+	.top-pic
+		h1.top-text #{maingreet}
+	.hp-intro
+		h2 Eat what you want
+		p Our experts help you make a tasty mealplan that fits your personalized nutritional needs. Our chefs have prepared tons of delicious recipes for everyone!
+	.container
+		.row.text-center
+			.col-sm-4.meal-day
+				img(src="potato.jpg" alt="Breakfast Photo" title="Breakfast Photo")
+				h4 Breakfast
+				p Start your day off right with a tasty meal: choose from something as light as yogurt with granola or as heavy as breakfast poutine!
+			.col-sm-4.meal-day
+				img(src="salmon-pierogi.jpg" alt="Lunch Photo" title="Lunch Photo")
+				h4 Lunch
+				p Take a break and have a meal that'll keep you going: select your choice of protein, carb, and pair them with a great tasting salad!
+			.col-sm-4.meal-day
+				img(src="eel.jpg" alt="Dinner Photo" title="Dinner Photo")
+				h4 Dinner
+				p Complete your day with an nutritious meal! Nothing beats enjoying a delicious and easy-to-cook meal at the end of a hard day.
+	.hp-intro
+		h2 Eat well together
+		p Join our thriving community and get access to weekly mealplans with plenty of dietary options. By referring your friends and family, you can save on your food!
+		p Connect with us on social media
+		p
+			a(href="#")
+				ion-icon(name="logo-facebook" class="jp-icon jp-social")
+			a(href="#")
+				ion-icon(name="logo-twitter" class="jp-icon jp-social")
+			a(href="#")
+				ion-icon(name="logo-instagram" class="jp-icon jp-social")

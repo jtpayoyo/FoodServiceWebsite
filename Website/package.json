@@ -1,0 +1,18 @@
+{
+  "name": "day8to13_assignment",
+  "version": "1.0.0",
+  "description": "Here are the f iles for the nodeJS assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index-pug-6.js"
+  },
+  "author": "Jeanne Payoyo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7",
+    "pug": "^3.0.2"
+  }
+}

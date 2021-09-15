@@ -1,0 +1,63 @@
+//- 
+	CONTACT PUG PAGE
+	author: Jeanne Payoyo
+	date: June 10, 2021
+	course: CPRG 210 nodeJS
+	description: contact pug page converted from html
+	uses post to send form information
+extends layout.pug
+block title
+	title healthybird Contact
+block append content
+	.contact-pic.top-pic
+		h1.top-text Contact
+	.hp-intro
+		h2 Our People
+		p Get to know some of the amazing members of the healthybird team who are excited to help you start your healthy-eating journey with us!
+	.container.bio-contact.text-center
+		.row
+			.col-sm-6.bios
+				img(src="person4.jpg" alt="Grace Abebe" title = "Grace Abebe")
+				h4 Grace Abebe
+				p Grace is a veteran chef and has traveled all over the world to master different cuisines. She loves to share recipes from her home country Kenya.
+			.col-sm-6.bios
+				img(src="person2.jpg" alt="Arturo Esposito" title = "Arturo Esposito")
+				h4 Arturo Esposito
+				p Arturo is a fitness coach and a retired soccer player. He loves to volunteer and is passionate about food accessibility.
+		.row
+			.col-sm-6.bios
+				img(src="person3.jpg" alt="Gerald Thomson" title = "Gerald Thomson")
+				h4 Gerald Thomson
+				p Gerald is a nutritionist and an avid swimmer. He loves to develop new recipes for desserts and is a co-host of the podcast "Just Desserts".
+			.col-sm-6.bios
+				img(src="person1.jpg" alt="Jenna Ma" title = "Jenna Ma")
+				h4 Jenna Ma
+				p Jenna is a seasoned chef and a hiking-enthusiast. She loves to use fresh locally-sourced veggies in her cooking, and sometimes dabbles in foraging.
+	.hp-intro
+		h2 Get in Touch
+		p Ready to get started? Submit your information and we'll get in touch with you!
+	form(class="div-form" action="/contact" method="POST")
+		.form-group.row
+			label(for="fname" class="col-sm-6 col-form-label") First Name
+			.col-sm-6
+				input(type="text" class="form-control" name="fname" id="fname" placeholder="First Name")
+		.form-group.row
+			label(for="lname" class="col-sm-6 col-form-label") Last Name
+			.col-sm-6
+				input(type="text" class="form-control" name="lname" id="lname" placeholder="Last Name")
+		.form-group.row
+			label(for="phone" class="col-sm-6 col-form-label") Phone
+			.col-sm-6
+				input(type="tel" class="form-control" name="phone" id="phone" placeholder="Phone")
+		.form-group.row
+			label(for="email" class="col-sm-6 col-form-label") Email
+			.col-sm-6
+				input(type="email" class="form-control" name="email" id="email" placeholder="Email")
+		.form-group.row
+			label(for="postal" class="col-sm-6 col-form-label") Postal Code
+			.col-sm-6
+				input(type="text" class="form-control" name="postal" id="postal" placeholder="A1B 2C3")
+		.form-group.row
+			.col-sm-6
+			.col-sm-6
+				button(type="submit" style="margin-top:10px;" class="btn btn-primary") Submit
